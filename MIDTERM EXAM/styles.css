@@ -1,0 +1,278 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Profile image in the nav */
+nav img.symbol-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border-color: #f0f0f0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+nav ul li button:hover {
+    background-color: #555;
+}
+
+/* Sections styles */
+section {
+    padding: 100px 50px;
+    margin-left: 270px; /* Adjusted for the nav width */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p, ul {
+    font-size: 18px;
+}
+
+#p-head{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 300px;
+}
+
+strong {
+    padding-bottom: 20px;
+}
+
+/* Section background colors alternating between light and dark shades */
+#introduction {
+    background-color: #f7f7f7; /* Light */
+}
+
+#about {
+    background-color: #eaeaea; /* A bit darker */
+}
+
+#skills {
+    background-color: #f7f7f7; /* Light */
+}
+
+#education {
+    background-color: #eaeaea; /* A bit darker */
+}
+
+#contact {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    gap: 15px; /* Space between items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+}
+
+.contact-item img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Lists styles */
+#skills ul, #education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li, #education li {
+    margin: 10px 0;
+}
+
+/* Contact link styles */
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox styles for skills */
+.technical-skills, .coding-skills, .musical-skills {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    gap: 10px; /* Space between icons */
+}
+
+/* Consistent image sizing */
+.technical-skills img, .coding-skills img, .musical-skills img {
+    width: 90px; /* Set a fixed width */
+    height: 90px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the image fits within the defined size without distortion */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
+    margin-bottom: 20px; /* Space between list items */
+}
+
+.education-item img {
+    width: 90px; /* Set a fixed size for the image */
+    height: 90px;
+    object-fit: cover; /* Adjust image to cover the space */
+}
+
+.map-iframe {
+    width: 100%; /* Make the iframe responsive */
+    height: 100%; /* Set a fixed height for the iframe */
+    border: 0; /* Remove border */
+    margin-top: 10px; /* Space between text and iframe */
+}
+
+.photo-gallery {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Add some padding */
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.project-gallery {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Add some padding */
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.photo-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.project-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.photo-gallery img {
+    height: 200px; /* Set a uniform height for images */
+    margin-right: 10px; /* Space between images */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.project-gallery img {
+    height: 200px; /* Set a uniform height for images */
+    margin-right: 10px; /* Space between images */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+    object-fit: cover; /* Ensure images cover the area */
+    border: 3px solid #262626; /* Add a 3px solid border with green color */
+}
+
+.photo-gallery img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+.project-gallery img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.songs-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.song-container {
+    display:flex;
+    justify-content: space-between;
+    overflow-x: auto; /*Scroll Horizontal*/
+    padding: 10px;
+}
+
+.song-box {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 auto;
+    max-width: 150px;
+}
+
+.song-box img {
+    width: 100%;
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.song-box img:hover {
+    transform: scale(1.05);
+}
+
+#school-adjust-padding{
+    padding-top: 30px;
+}
